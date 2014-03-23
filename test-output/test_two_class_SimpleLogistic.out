@@ -1,0 +1,59 @@
+
+SimpleLogistic:
+
+Class 0 :
+-2.81 + 
+[lsubptau] * 1.48 +
+[Gender] * 0.3  +
+[ADAS_Cog_Total_Score_Baseline] * -0.02 +
+[percent_Change_in_ADAS_Cog_Total_11_Score] * -0.14 +
+[Entorhinal_Cortex_Thickness_as_Baseline] * 0.46 +
+[Hepatocyte_Growth_Factor_as_HGF_as_ng_per_mL] * -1.69 +
+[Interleukin_6_receptor_as_IL_6r_as_ng_per_mL] * 2.59 +
+[Monokine_Induced_by_Gamma_Interferon_as_MI__pg_per_ml] * 0.76 +
+[Serum_Glutamic_Oxaloacetic_Transaminase_as_ug_per_mL] * -1.51 +
+[Thrombomodulin_as_TM_as_ng_per_ml] * 1.32 +
+[rs2718058=GA] * -0.23 +
+[rs10792832=AA] * 0.31
+
+Class 1 :
+2.81 + 
+[lsubptau] * -1.48 +
+[Gender] * -0.3 +
+[ADAS_Cog_Total_Score_Baseline] * 0.02 +
+[percent_Change_in_ADAS_Cog_Total_11_Score] * 0.14 +
+[Entorhinal_Cortex_Thickness_as_Baseline] * -0.46 +
+[Hepatocyte_Growth_Factor_as_HGF_as_ng_per_mL] * 1.69 +
+[Interleukin_6_receptor_as_IL_6r_as_ng_per_mL] * -2.59 +
+[Monokine_Induced_by_Gamma_Interferon_as_MI__pg_per_ml] * -0.76 +
+[Serum_Glutamic_Oxaloacetic_Transaminase_as_ug_per_mL] * 1.51 +
+[Thrombomodulin_as_TM_as_ng_per_ml] * -1.32 +
+[rs2718058=GA] * 0.23 +
+[rs10792832=AA] * -0.31
+
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          49               69.0141 %
+Incorrectly Classified Instances        22               30.9859 %
+Kappa statistic                          0.3513
+Mean absolute error                      0.3661
+Root mean squared error                  0.4476
+Total Number of Instances               71     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.607     0.256      0.607     0.607     0.607      0.752    0
+                 0.744     0.393      0.744     0.744     0.744      0.752    1
+Weighted Avg.    0.69      0.339      0.69      0.69      0.69       0.752
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17 11 |  a = 0
+ 11 32 |  b = 1
+

@@ -1,0 +1,77 @@
+
+Options: -I 0 -M 500 -H 50 -W 0.0 
+
+SimpleLogistic:
+
+Class 0 :
+-2.81 + 
+[lsubptau] * 1.48 +
+[Gender] * 0.3  +
+[ADAS_Cog_Total_Score_Baseline] * -0.02 +
+[percent_Change_in_ADAS_Cog_Total_11_Score] * -0.14 +
+[Entorhinal_Cortex_Thickness_as_Baseline] * 0.46 +
+[Hepatocyte_Growth_Factor_as_HGF_as_ng_per_mL] * -1.69 +
+[Interleukin_6_receptor_as_IL_6r_as_ng_per_mL] * 2.59 +
+[Monokine_Induced_by_Gamma_Interferon_as_MI__pg_per_ml] * 0.76 +
+[Serum_Glutamic_Oxaloacetic_Transaminase_as_ug_per_mL] * -1.51 +
+[Thrombomodulin_as_TM_as_ng_per_ml] * 1.32 +
+[rs2718058=GA] * -0.23 +
+[rs10792832=AA] * 0.31
+
+Class 1 :
+2.81 + 
+[lsubptau] * -1.48 +
+[Gender] * -0.3 +
+[ADAS_Cog_Total_Score_Baseline] * 0.02 +
+[percent_Change_in_ADAS_Cog_Total_11_Score] * 0.14 +
+[Entorhinal_Cortex_Thickness_as_Baseline] * -0.46 +
+[Hepatocyte_Growth_Factor_as_HGF_as_ng_per_mL] * 1.69 +
+[Interleukin_6_receptor_as_IL_6r_as_ng_per_mL] * -2.59 +
+[Monokine_Induced_by_Gamma_Interferon_as_MI__pg_per_ml] * -0.76 +
+[Serum_Glutamic_Oxaloacetic_Transaminase_as_ug_per_mL] * 1.51 +
+[Thrombomodulin_as_TM_as_ng_per_ml] * -1.32 +
+[rs2718058=GA] * 0.23 +
+[rs10792832=AA] * -0.31
+
+
+Time taken to build model: 0.73 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         204               71.3287 %
+Incorrectly Classified Instances        82               28.6713 %
+Kappa statistic                          0.4266
+Mean absolute error                      0.3767
+Root mean squared error                  0.4275
+Relative absolute error                 75.3315 %
+Root relative squared error             85.4972 %
+Total Number of Instances              286     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 104  39 |   a = 0
+  43 100 |   b = 1
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         181               63.2867 %
+Incorrectly Classified Instances       105               36.7133 %
+Kappa statistic                          0.2657
+Mean absolute error                      0.4498
+Root mean squared error                  0.4742
+Relative absolute error                 89.9599 %
+Root relative squared error             94.8236 %
+Total Number of Instances              286     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 98 45 |  a = 0
+ 60 83 |  b = 1
+

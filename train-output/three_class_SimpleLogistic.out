@@ -1,0 +1,67 @@
+
+Options: -I 0 -M 500 -H 50 -W 0.0 
+
+SimpleLogistic:
+
+Class 0 :
+-0.37 + 
+[percent_Change_in_ADAS_Cog_Total_11_Score] * -0.26 +
+[Entorhinal_Cortex_Thickness_as_Baseline] * 0.42
+
+Class 1 :
+1.84 + 
+[Left_Hippocampal_Volume_as_Baseline] * -5.56 +
+[Hepatocyte_Growth_Factor_as_HGF_as_ng_per_mL] * 2.19 +
+[rs2718058=GG] * -0.33 +
+[rs4147929=AG] * -0.26
+
+Class 2 :
+0.9  + 
+[percent_Change_in_ADAS_Cog_Total_11_Score] * 0.09 +
+[Parahippocampal_Cortex_Thickness_as_Baseline] * -0.76 +
+[rs7274581=TT] * -0.42
+
+
+Time taken to build model: 1.49 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         368               67.031  %
+Incorrectly Classified Instances       181               32.969  %
+Kappa statistic                          0.2507
+Mean absolute error                      0.3201
+Root mean squared error                  0.3938
+Relative absolute error                 88.595  %
+Root relative squared error             92.7035 %
+Total Number of Instances              549     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  48  95   0 |   a = 0
+  20 315   1 |   b = 0.5
+   5  60   5 |   c = 1
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         347               63.2058 %
+Incorrectly Classified Instances       202               36.7942 %
+Kappa statistic                          0.136 
+Mean absolute error                      0.3332
+Root mean squared error                  0.4076
+Relative absolute error                 92.2072 %
+Root relative squared error             95.9556 %
+Total Number of Instances              549     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31 112   0 |   a = 0
+  21 314   1 |   b = 0.5
+   3  65   2 |   c = 1
+

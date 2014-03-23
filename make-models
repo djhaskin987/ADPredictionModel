@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [ -f /usr/share/java/weka.jar ]
+then
+    jar=/usr/share/java/weka.jar
+elif [ -z "${1}" ]
+then
+    echo "Usage: make-models <weka-jar-location>" >&2
+    exit 1
+else
+    jar="${1}"
+fi
+rm -rf target
+mkdir -p target
+java -cp "${jar}" weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0 -t ./arff/ratios_binary_stratified.arff -d target/two_class_SimpleLogistic.model > target/two_class_SimpleLogistic.out
+
+java -cp "${jar}" weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0 -t ./arff/ratios_added_and_cleaned.arff -d target/three_class_SimpleLogistic.model > target/three_class_SimpleLogistic.out
