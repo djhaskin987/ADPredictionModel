@@ -1,0 +1,115 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{prioritygeneva}
+Geneva (2012:112) WHO: Dementia: A Public Health Priority.
+\bibAnnoteFile{prioritygeneva}
+
+\bibitem{reitz2011epidemiology}
+Reitz C, Brayne C, Mayeux R (2011) Epidemiology of {Alzheimer} disease.
+\newblock Nature reviews {Neurology} 7.
+\bibAnnoteFile{reitz2011epidemiology}
+
+\bibitem{glenner1984alzheimers}
+Glenner GG, Wong CW (1984) Alzheimer's disease: initial report of the
+  purificationand characterization of a novel cerebrovascular amyloid protein.
+\newblock Biochem Biophys Res Commun 120.
+\bibAnnoteFile{glenner1984alzheimers}
+
+\bibitem{rh2004mitochondrial}
+Swerdlow R, Khan S (2004) A mitochondrial cascade hypothesis for sporadic
+  {Alzheimer}'s disease.
+\newblock Med Hypotheses 63: 8--20.
+\bibAnnoteFile{rh2004mitochondrial}
+
+\bibitem{pg2012}
+Ridge P, Maxwell T, Corcoran C, Norton M, Tschanz J, et~al. (2012)
+  Mitochondrial genomic analysis of late onset alzheimer's disease reveals
+  protective haplogroups h6a1a/h6a1b: The cache county study on memory in
+  aging.
+\newblock PLoS {ONE} .
+\bibAnnoteFile{pg2012}
+
+\bibitem{ac2010}
+Jun G, Naj A, Beecham G, Wang L, Buros J, et~al. (2010) {Meta}-analysis
+  confirms {CR}1, {CLU}, and {PICALM} as alzheimer disease risk loci and
+  reveals interactions with {APOE} genotypes.
+\newblock Arch Neurol 67: 1473--1484.
+\bibAnnoteFile{ac2010}
+
+\bibitem{jc2011}
+Hollingworth P, Harold D, Sims R, Gerrish A, Lambert J, et~al. (2011) {Common}
+  variants at {ABCA}7, {MS}4a6a/ms4a4e, {EPHA}1, {CD}33 and {CD}2ap are
+  associated with {Alzheimer}'s disease.
+\newblock Nat Genet 43: 429--435.
+\bibAnnoteFile{jc2011}
+
+\bibitem{Mahley2009}
+Mahley R, et~al. (2009) Apolipoprotein {E}: structure determines function, from
+  atherosclerosis to {Alzheimer}'s disease to {AIDS}.
+\newblock Journal of lipid research .
+\bibAnnoteFile{Mahley2009}
+
+\bibitem{hulstaert1999}
+Hulstaert F, et~al. (1999) Improved discrimination of {AD} patients using
+  beta-amyloid 42 and tau levels in {CSF}.
+\newblock {Neurology} 52.
+\bibAnnoteFile{hulstaert1999}
+
+\bibitem{klunk2004}
+Klunk WE, et~al. Imaging brain amyloid in {Alzheimer}'s disease with
+  {Pittsburgh} {Compound}-{B}.
+\newblock {Ann} {Neurol} 55.
+\bibAnnoteFile{klunk2004}
+
+\bibitem{swa2001}
+Swainson R, et~al. (2001) Early detection and differential diagnosis of
+  alzheimer's disease and depression with neuropsychological tasks.
+\newblock Dement Geriatr Cogn Disord 12:265-280 (DOI:10.1159/000051269).
+\bibAnnoteFile{swa2001}
+
+\bibitem{2003early}
+Bennett P (2003) Early diagnosis of alzheimer's disease: Clinical and economic
+  benefits.
+\newblock Journal of the American Geriatrics Society 51.
+\bibAnnoteFile{2003early}
+
+\bibitem{Yang2011}
+Yang E, et~al. (2011) Quantifying the pathophysiological timeline of
+  alzheimer's disease.
+\newblock Journal of Alzheimer's Disease 26:745-753 745.
+\bibAnnoteFile{Yang2011}
+
+\bibitem{delor2013}
+Delor I, et~al. Modeling {Alzheimer}'s {Disease} {Progression} {Using}
+  {Disease} {Onset} {Time} and {Disease} {Trajectory} {Concepts} {Applied} to
+  {CDR}-{SOB} {Scores} {From} {ADNI}.
+\newblock {CPT} {Pharmacometrics} {Syst} {Pharmacol} 2, e78; doi:10 2.
+\bibAnnoteFile{delor2013}
+
+\bibitem{map2014}
+Mapstone M, et~al. Plasma phospholipids identify antecedent memory impairment
+  in older adults.
+\newblock Nature Medicine.
+\bibAnnoteFile{map2014}
+
+\bibitem{lambert2013meta}
+Lambert JC, Ibrahim-Verbaas CA, Harold D, Naj AC, Sims R, et~al. (2013)
+  Meta-analysis of 74,046 individuals identifies 11 new susceptibility loci for
+  alzheimer's disease.
+\newblock Nature genetics .
+\bibAnnoteFile{lambert2013meta}
+
+\end{thebibliography}
